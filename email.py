@@ -1,7 +1,7 @@
 import smtplib
 
 email = "goutam.sarkar09@gmail.com"
-password = 'sarkar.9614206212' # which you got from app password of your gmail account
+password = 'hqza cnfc wbzs dxay' # which you got from app password of your gmail account
 receiver_email = "goutam.sarkar09@gmail.com"
 
 subject = "email from python"
