@@ -20,9 +20,9 @@ def extract_mail_data(input_file):
         reader = input_csv.read()
         start = "<BODY_START>"
         end = "<BODY_END>"
-        body=reader[reader.index(start) + len(start): reader.index(end)]
-        print(body)
-        return body
+        body_txt=reader[reader.index(start) + len(start): reader.index(end)]
+        print(body_txt)
+        return body_txt
 
 def main1():
     if len(sys.argv) < 2:
@@ -30,8 +30,8 @@ def main1():
         sys.exit(1)
     input_file = sys.argv[1]
     fetch_required_input_files(input_file)
-    body = extract_mail_data(input_file)
-    return body
+    body_txt = extract_mail_data(input_file)
+    return body_txt
 
 if __name__ == '__main__':
     main1()
